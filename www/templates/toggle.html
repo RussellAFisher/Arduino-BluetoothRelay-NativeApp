@@ -1,0 +1,12 @@
+<ion-view view-title="Bluetooth Control">
+  <ion-content class="padding">
+    <h2>Bluetooth Relay Controls</h2>
+    <p>
+    This override will disable the photoresistor entirely. All controls will be held by Bluetooth until the system is reset.</a>
+    </p>
+    <ion-toggle ng-model="toggleMode.checked" ng-change="toggleModeFunc()">Toggle Relay</ion-toggle>
+    <br>
+    <br>
+    <ion-checkbox ng-change="photoresistorStatus()" ng-model="photoresistorStatus.value" >Photoresistor Enabled</ion-checkbox>
+  </ion-content>
+</ion-view>
